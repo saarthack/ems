@@ -2,17 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  color: #fff;
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: gilroy;
+  color: white;
 }
-body{
+
+html,body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
   background-color: #111;
 }
-#tasklist::-webkit-scrollbar{
-    background-color: transparent;
-    height: 5px;
-}
-#tasklist::-webkit-scrollbar-thumb{
-  background-color: rgb(143, 143, 143);
-  border-radius: 50px;
+
+#tasklist::-webkit-scrollbar, #noscrollbar::-webkit-scrollbar{
+  display: none;
 }
